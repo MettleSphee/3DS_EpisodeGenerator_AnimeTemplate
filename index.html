@@ -1,0 +1,31 @@
+<html>
+	<body>
+		<h1>Episode JSON Generator for the Anime Channel Template</h1>
+		<br><br>episodeid:	<input type="text",   id="episodeid";/>
+		<br><br>episodeNo:	<input type="number", id="episodeNumber", min="1", value="1";/>
+		<br><br>number:		<input type="number", id="number", min="1", value="1";/>
+		<br><br>ageRate: 	<input type="number", id="age", min="0", value="0";/>
+		<br><br>title: 		<input type="text",   id="title";/>
+		<br><br>description:<input type="text",   id="description";/>
+		<br><br>Add episode to description?<input type="checkbox",   id="checkmark";/>
+		<br><br>mediaUrls: 	<input type="text",   id="mediaUrl";/>
+		<br><br>imageUrls: 	<input type="text",   id="imageUrl";/><br><br>
+		<input type="submit" value="Default" onclick="gen_default()"/>
+		<input type="submit" value="Generate" onclick="gen_output()"/>
+		<input type="submit" value="+1" onclick="add_episode()"/>
+		<input type="submit" value="Clear Text" onclick="reset_field()"/>
+		<br><br>
+		The episode itself:
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		&nbsp&nbsp&nbsp&nbsp
+		what to add under the category
+		<br>
+		<textarea name="result", rows="25", cols="50"></textarea>
+		<textarea name="result2", rows="25", cols="35"></textarea>
+		<br><br>
+			<!--Made by MettleSphee-->
+		<script src='script.js'></script>
+	</body>
+</html>
