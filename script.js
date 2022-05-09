@@ -1,5 +1,6 @@
 ///Script by MettleSphee
-///spent 90 minutes of typing this thing
+///spent 60 minutes of typing this thing
+///and another 40 fixing it entirely
 
 function gen_default(){
 	document.getElementById("episodeid").value="";
@@ -29,8 +30,8 @@ function gen_output(){
 	resu.setNode.id="episode:"+document.getElementById("episodeid").value+document.getElementById("episodeNumber").value;
 	resu.setNode.version="649f671be9bd0e2bf9fa18d73de07d57";
 	resu.setNode.type="episode";
-	resu.setNode.number=document.getElementById("number").value;
-	resu.setNode.ageRate=document.getElementById("age").value;
+	resu.setNode.number=parseInt(document.getElementById("number").value);
+	resu.setNode.ageRate=parseInt(document.getElementById("age").value);
 	resu.setNode.title=document.getElementById("title").value;
 	resu.setNode.description=document.getElementById("description").value;
 	if (document.getElementById("checkmark").checked===true){
@@ -47,6 +48,7 @@ function gen_output(){
 		ob+=document.getElementById("episodeNumber").value;
 	}
 	ob+=".moflex\"}";
+	console.log(ob);
 	resu.setNode.mediaUrls=JSON.parse(ob);
 	console.log(resu.setNode.mediaUrls);
 	
