@@ -1,5 +1,5 @@
 ///Script by MettleSphee
-///spent 45 minutes of typing this thing
+///spent 60 minutes of typing this thing
 
 function gen_default(){
 	document.getElementById("episodeid").value="";
@@ -58,6 +58,6 @@ function gen_output(){
 	resu2.version="55d29a3bf5f0ed8b98234f2b88911f4c";
 
 	///output
-	document.getElementsByName('result')[0].value+=JSON.stringify(resu)+",";
-	document.getElementsByName('result2')[0].value+=JSON.stringify(resu2)+",";
+	document.getElementsByName('result')[0].value+=JSON.stringify(resu,undefined,3)+",";
+	document.getElementsByName('result2')[0].value+=JSON.stringify(resu2,undefined,1)+",";
 }
