@@ -1,5 +1,5 @@
 ///Script by MettleSphee
-///spent 60 minutes of typing this thing
+///spent 90 minutes of typing this thing
 
 function gen_default(){
 	document.getElementById("episodeid").value="";
@@ -47,7 +47,6 @@ function gen_output(){
 		ob+=document.getElementById("episodeNumber").value;
 	}
 	ob+=".moflex\"}";
-	console.log(ob);
 	resu.setNode.mediaUrls=JSON.parse(ob);
 	console.log(resu.setNode.mediaUrls);
 	
