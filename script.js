@@ -43,7 +43,8 @@ function gen_output(){
 	resu.setNode.mediaUrls.en=document.getElementById("mediaUrl").value;
 	resu.setNode.mediaUrls.fr=document.getElementById("mediaUrl").value;
 	resu.setNode.viewCount=111;
-	resu.setNode.imageUrls=document.getElementById("imageUrl").value;;
+	resu.setNode.imageUrls={};
+	resu.setNode.imageUrls.default=document.getElementById("imageUrl").value;;
 	resu.setNode.agePrerollVideo="";
 	
 	resu2.id=resu.setNode.id;
