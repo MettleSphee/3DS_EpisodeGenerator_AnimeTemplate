@@ -8,8 +8,12 @@
 		<br><br>title: 		<input type="text",   id="title";/>
 		<br><br>description:<input type="text",   id="description";/>
 		<br><br>Add episode to description?<input type="checkbox",   id="checkmark";/>
-		<br><br>mediaUrls: 	<input type="text",   id="mediaUrl";/>
-		<br><br>imageUrls: 	<input type="text",   id="imageUrl";/><br><br>
+		<br><br>mediaUrls (adds .moflex automatically): 	<input type="text",   id="mediaUrl";/>
+		<br><br>Add episode number to media?<input type="checkbox",   id="media_checkmark";/><br>
+		If you have checked this, it will add the episode number as well<br>
+		For example, your_link.here/12.moflex
+		<br><br>imageUrls: 	<input type="text",   id="imageUrl";/>
+		<br><br>Add episode to image? (to be added when we'll have thumbnails)<input type="checkbox",   id="image_checkmark";/>
 		<input type="submit" value="Default" onclick="gen_default()"/>
 		<input type="submit" value="Generate" onclick="gen_output()"/>
 		<input type="submit" value="+1" onclick="add_episode()"/>
