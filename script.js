@@ -34,18 +34,21 @@ function gen_output(){
 	resu.setNode.title=document.getElementById("title").value;
 	resu.setNode.description=document.getElementById("description").value;
 	if (document.getElementById("checkmark").checked===true){
+		resu.setNode.description+="Episode ";
 		if (document.getElementById("description").value){
 			resu.setNode.description+=" - ";
 		}
-		resu.setNode.description+="Episode "+document.getElementById("episodeNumber").value;
+		resu.setNode.description+=resu.setNode.number;
 	}
 	resu.setNode.mediaUrls={};
 	resu.setNode.mediaUrls.en=document.getElementById("mediaUrl").value;
 	resu.setNode.mediaUrls.fr=document.getElementById("mediaUrl").value;
 	if (document.getElementById("media_checkmark").checked===true){
-		resu.setNode.description+=+document.getElementById("episodeNumber").value;
+		resu.setNode.mediaUrls.en+=document.getElementById("episodeNumber").value;
+		resu.setNode.mediaUrls.fr+=document.getElementById("episodeNumber").value;
 	}
-	resu.setNode.description+=".moflex";
+	resu.setNode.mediaUrls.en+=".moflex";
+	resu.setNode.mediaUrls.fr+=".moflex";
 	resu.setNode.viewCount=111;
 	resu.setNode.imageUrls={};
 	resu.setNode.imageUrls.default=document.getElementById("imageUrl").value;
