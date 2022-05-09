@@ -40,15 +40,17 @@ function gen_output(){
 		}
 		resu.setNode.description+=resu.setNode.number;
 	}
-	resu.setNode.mediaUrls={};
-	resu.setNode.mediaUrls.en=document.getElementById("mediaUrl").value;
-	resu.setNode.mediaUrls.fr=document.getElementById("mediaUrl").value;
+	
+	var ob="{\"";
+	ob+=document.getElementById("lang").value+"\":\""+document.getElementById("mediaUrl").value;
 	if (document.getElementById("media_checkmark").checked===true){
-		resu.setNode.mediaUrls.en+=document.getElementById("episodeNumber").value;
-		resu.setNode.mediaUrls.fr+=document.getElementById("episodeNumber").value;
+		ob+=document.getElementById("episodeNumber").value;
 	}
-	resu.setNode.mediaUrls.en+=".moflex";
-	resu.setNode.mediaUrls.fr+=".moflex";
+	ob+=".moflex\"}";
+	console.log(ob);
+	resu.setNode.mediaUrls=JSON.parse(ob);
+	console.log(resu.setNode.mediaUrls);
+	
 	resu.setNode.viewCount=111;
 	resu.setNode.imageUrls={};
 	resu.setNode.imageUrls.default=document.getElementById("imageUrl").value;
