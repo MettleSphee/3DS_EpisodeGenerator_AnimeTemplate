@@ -35,10 +35,10 @@ function gen_output(){
 	resu.setNode.title=document.getElementById("title").value;
 	resu.setNode.description=document.getElementById("description").value;
 	if (document.getElementById("checkmark").checked===true){
-		resu.setNode.description+="Episode ";
 		if (document.getElementById("description").value){
 			resu.setNode.description+=" - ";
 		}
+		resu.setNode.description+="Episode ";
 		resu.setNode.description+=resu.setNode.number;
 	}
 	
