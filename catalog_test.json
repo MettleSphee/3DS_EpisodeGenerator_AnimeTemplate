@@ -1,0 +1,94 @@
+{
+	"body": 
+	[
+		{
+			"setNode": {
+				"id": "root",
+				"type": "root",
+				"children": [
+					{
+						"id": "channel:category1"
+					}
+				]
+			}
+		},
+		
+		{
+			"setNode": {
+				"id": "episode:video1",
+				"type": "episode",
+				"number": 2,
+				"ageRate": 1,
+				"title": "Refresh button",
+				"description": "description.",
+				"mediaUrls": {
+					"en": "https://ia902502.us.archive.org/27/items/moflex-test-mettle/01.moflex",
+					"fr": "https://ia902502.us.archive.org/27/items/moflex-test-mettle/01.moflex"
+				},
+				"imageUrls": {
+					"default":""
+				},
+				"agePrerollVideo": ""
+			}
+		},
+		{
+			"setNode": {
+				"id": "episode:video2",
+				"type": "episode",
+				"number": "9​99​​",
+				"ageRate": -1,
+				"title": "githubtest",
+				"description": "description 2.",
+				"mediaUrls": {
+					"default": "https://raw.githubusercontent.com/MettleSphee/3DS_EpisodeGenerator_AnimeTemplate/b5cbbf94d2dc2e7caeb4c2bcafc3353de6887c54/dummy.txt"
+				},
+				"viewCount": 111,
+				"imageUrls": {
+					"default":""
+				},
+				"agePrerollVideo": ""
+			}
+		},
+		{
+			"setNode": {
+				"id": "episode:video3",
+				"type": "episode",
+				"number": "no​​",
+				"ageRate": -1,
+				"title": "githubtest2",
+				"description": "description 3.",
+				"mediaUrls": {
+					"default": "https://raw.githubusercontent.com/MettleSphee/3DS_EpisodeGenerator_AnimeTemplate/main/dummy.moflex"
+				},
+				"viewCount": 111,
+				"imageUrls": {
+					"default":""
+				},
+				"agePrerollVideo": ""
+			}
+		},
+		{
+			"setNode": {
+				"id": "channel:category1",
+				"type": "channel",
+				"title": "Test videos",
+				"eshopLinks": "https://mettlesphee.camdvr.org",
+				"imageUrls": {
+					"default": "https://dm13bvvnwveun.cloudfront.net/inazuma/thumbs/IE02-thumbnail.3dst"
+				},
+				"children": [
+					{
+						"id": "episode:video1"
+					},
+					{
+						"id": "episode:video2"
+					},
+					{
+						"id": "episode:video3"
+					}
+				]
+			}
+		}
+		
+	]
+}
