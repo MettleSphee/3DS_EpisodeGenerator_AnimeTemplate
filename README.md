@@ -1,6 +1,6 @@
 # 3DS_EpisodeGenerator_AnimeTemplate
 Runs into your browser! Generates an object for you to copy-paste into your Anime Channel catalog. 
-This is used with this amazing project from cooolgamer! https://github.com/cooolgamer/Nintendo-Anime-Channel-Revival/
+This is used with this amazing project from cooolgamer! [https://github.com/cooolgamer/Nintendo-Anime-Channel-Revival/](https://github.com/Aftendo/Nintendo-Anime-Channel-Revival)
 To understand the inputs (what you'll put in the file), you need to read (and understand) the catalog you'll use them for, but here's a brief summary:
 
 The catalog is a JSON file, with 4 sections:
